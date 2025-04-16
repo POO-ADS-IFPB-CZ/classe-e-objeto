@@ -36,4 +36,44 @@ public class Aluno {
         this.nome = nome;
     }
 
+    public int getMatricula(){
+        return matricula;
+    }
+
+    public void setMatricula(int matricula){
+        this.matricula = matricula;
+    }
+
+    public String getCpf(){
+        return cpf;
+    }
+
+    public void setCpf(String cpf){
+        this.cpf = cpf;
+    }
+
+    public String getEndereco(){
+        return endereco;
+    }
+
+    public void setEndereco(String endereco){
+        this.endereco = endereco;
+    }
+
+    public String getTelefone(){
+        return telefone;
+    }
+
+    public void setTelefone(String telefone){
+        this.telefone = telefone;
+    }
+
+    public LocalDate getNascimento(){
+        return nascimento;
+    }
+
+    public void setNascimento(LocalDate nascimento){
+        this.nascimento = nascimento;
+    }
+
 }
