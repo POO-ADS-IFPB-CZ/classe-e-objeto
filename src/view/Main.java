@@ -1,3 +1,7 @@
+package view;
+
+import model.Aluno;
+
 import java.time.LocalDate;
 
 public class Main {
@@ -10,6 +14,12 @@ public class Main {
         Aluno maria = new Aluno();
         Aluno jose = new Aluno("José", 654);
 
+        joao.setNome("João da Silva");
+        System.out.println(joao.getNome());
+
+        System.out.println(maria.getNome());
+        maria.setNome("Maria de Oliveira");
+        System.out.println(maria.getNome());
 
     }
 }
