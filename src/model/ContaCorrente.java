@@ -1,7 +1,7 @@
 package model;
 
 public class ContaCorrente {
-    private int numero;
+    private final int numero;
     private String titular;
     private float saldo;
 
