@@ -1,16 +1,19 @@
 package view;
 
-import model.Endereco;
-import model.Escola;
+import model.ContaCorrente;
 
 public class Main {
     public static void main(String[] args) {
-        Escola escola = new Escola("10.783.898/0005-07",
-            "IFPB Cajazeiras",
-                new Endereco("José Antônio da Silva",
-                    300, "58900-000"));
+        ContaCorrente conta1 = new ContaCorrente(1, "João");
+        ContaCorrente conta2 = new ContaCorrente(2, "Maria");
 
-        System.out.println(escola.getEndereco().getRua().toUpperCase());
+        conta1.depositar(1000);
+        conta1.depositar(1000000);
+        conta2.depositar(500);
+        conta1.transferir(conta2, 200);
+
+        System.out.println(conta1.getSaldo());
+        System.out.println(conta2.getSaldo());
 
     }
 }

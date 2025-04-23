@@ -35,4 +35,8 @@ public class ContaCorrente {
         return true;
     }
 
+    public float getSaldo(){
+        return saldo;
+    }
+
 }
