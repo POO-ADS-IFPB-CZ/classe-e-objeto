@@ -1,25 +1,16 @@
 package view;
 
-import model.Aluno;
-
-import java.time.LocalDate;
+import model.Endereco;
+import model.Escola;
 
 public class Main {
     public static void main(String[] args) {
+        Escola escola = new Escola("10.783.898/0005-07",
+            "IFPB Cajazeiras",
+                new Endereco("José Antônio da Silva",
+                    300, "58900-000"));
 
-        Aluno joao = new Aluno("João", 123,
-                "111.111.111-01", "Rua X, 300",
-                "088999999999",
-                LocalDate.of(2000,3,25));
-        Aluno maria = new Aluno();
-        Aluno jose = new Aluno("José", 654);
-
-        joao.setNome("João da Silva");
-        System.out.println(joao.getNome());
-
-        System.out.println(maria.getNome());
-        maria.setNome("Maria de Oliveira");
-        System.out.println(maria.getNome());
+        System.out.println(escola.getEndereco().getRua().toUpperCase());
 
     }
 }
