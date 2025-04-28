@@ -1,6 +1,7 @@
 package model;
 
 public class ContaCorrente {
+    private static int contContas;
     private final int numero;
     private String titular;
     private float saldo;
@@ -9,6 +10,11 @@ public class ContaCorrente {
         this.numero = numero;
         this.titular = titular;
         saldo = 0;
+        contContas++;
+    }
+
+    public static int getContContas(){
+        return contContas;
     }
 
     public boolean depositar(float valor){
