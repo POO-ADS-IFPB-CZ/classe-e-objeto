@@ -2,13 +2,20 @@ package view;
 
 import model.ContaCorrente;
 
+import java.time.Duration;
+import java.time.LocalDate;
+import java.time.Period;
+
 public class Main {
     public static void main(String[] args) {
-        ContaCorrente conta1 = new ContaCorrente("João");
-        ContaCorrente conta2 = new ContaCorrente("Maria");
-        ContaCorrente conta3 = new ContaCorrente("Pedro");
 
-        System.out.println(ContaCorrente.getContContas());
+        LocalDate nascimento = LocalDate.of(2000,05,
+                1);
+
+        System.out.println(
+                Period.between(nascimento, LocalDate.now())
+                        .getYears());
+
 
     }
 }
