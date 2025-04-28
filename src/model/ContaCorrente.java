@@ -6,11 +6,10 @@ public class ContaCorrente {
     private String titular;
     private float saldo;
 
-    public ContaCorrente(int numero, String titular){
-        this.numero = numero;
+    public ContaCorrente(String titular){
+        this.numero = ++contContas;
         this.titular = titular;
         saldo = 0;
-        contContas++;
     }
 
     public static int getContContas(){
